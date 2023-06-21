@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gloock";
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  background-image: url("image/ship.jpg");
+
+  display: block;
+  min-width: 200px;
+  min-height: 1250px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #ffffff;
+  overflow: auto;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+a:hover {
+  color: #fccb17;
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  background: #010101;
+  z-index: 1;
+}
+
+.menu {
+  margin-top: 15px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 250px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.quote-line {
+  width: 500px;
+  justify-content: center;
+  border: 3px solid #ebdede;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-inline: auto;
+}
+
+.quote {
+  position: absolute;
+  top: 500px;
+  bottom: 400px;
+  padding-left: 50px;
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Gloock";
+  text-align: center;
+  color: #ebdede;
+}
+
+.crew {
+  background-color: #d1bd9c;
+  min-height: 1000px;
+  font-family: "Playfair Display";
+}
+
+.head-poster {
+  padding-top: 175px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 80px;
+  text-align: center;
+  color: #44352e;
+}
+
+.poster-line {
+  width: 500px;
+  justify-content: center;
+  border: 5px solid #44352e;
+  margin-top: 5x;
+  margin-bottom: 15px;
+  margin-inline: auto;
+}
+
+.desc-poster {
+  font-size: 50px;
+  text-align: center;
+  color: #44352e;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  .menu {
+    visibility: hidden;
+  }
+
+  .quote {
+    position: absolute;
+    font-size: 15px;
+    top: 650px;
+    right: 50px;
+  }
+
+  .quote-line {
+    width: 250px;
+    border: 2px solid #ebdede;
+  }
+
+  .parallax {
+    background-image: url("image/ship-m.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .head-poster {
+    padding: 15px 15px;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .poster-line {
+    width: 250px;
+    border: 1px splid #44352e;
+  }
+
+  .desc-poster {
+    color: #44352e;
+    font-size: 20px;
+  }
+
+  .poster {
+    width: 173px;
+    height: 210px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 700px) and (max-width: 1060px) {
+  .menu > li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  .parallax {
+    background-image: url("image/ship-m.jpg");
+  }
+
+  a:link,
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .quote {
+    font-size: 15px;
+    top: 200px;
+    right: 25px;
+  }
+
+  .quote-line {
+    width: 250px;
+    border: 2px solid #ebdede;
+  }
+
+  .head-poster {
+    padding: 15px 10px;
+    font-size: 80px;
+    padding-top: 175px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .poster {
+    width: 173px;
+    height: 210px;
+  }
+}

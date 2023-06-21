@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <title>Calculator | JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <table id="calcu">
+        <tr>
+          <td colspan="3">
+            <input type="text" maxlength="2" value="0" id="result" disabled />
+          </td>
+          <td>
+            <input
+              class="special"
+              type="button"
+              value="&#9003;"
+              id="backspace"
+              onclick="back()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="special"
+              type="button"
+              value="C"
+              id="clear"
+              onclick="clr()"
+            />
+          </td>
+          <td>
+            <input
+              class="special"
+              type="button"
+              value="()"
+              id="bracket"
+              onclick="bracket()"
+            />
+          </td>
+          <td>
+            <input
+              class="special"
+              type="button"
+              value="%"
+              id=""
+              onclick="display('%')"
+            />
+          </td>
+          <td>
+            <input
+              class="arithmatic"
+              type="button"
+              value="&div;"
+              id="divis"
+              onclick="display('&div;')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="7" id="number" onclick="display(7)" />
+          </td>
+          <td>
+            <input type="button" value="8" id="number" onclick="display(8)" />
+          </td>
+          <td>
+            <input type="button" value="9" id="bumber" onclick="display(9)" />
+          </td>
+          <td>
+            <input
+              class="arithmatic"
+              type="button"
+              value="&times;"
+              id="times"
+              onclick="display('&times;')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="4" id="number" onclick="display(4)" />
+          </td>
+          <td>
+            <input type="button" value="5" id="number" onclick="display(5)" />
+          </td>
+          <td>
+            <input type="button" value="6" id="number" onclick="display(6)" />
+          </td>
+          <td>
+            <input
+              class="arithmatic"
+              type="button"
+              value="-"
+              id="minus"
+              onclick="display('-')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="1" id="number" onclick="display(1)" />
+          </td>
+          <td>
+            <input type="button" value="2" id="number" onclick="display(2)" />
+          </td>
+          <td>
+            <input type="button" value="3" id="number" onclick="display(3)" />
+          </td>
+          <td>
+            <input
+              class="arithmatic"
+              type="button"
+              value="+"
+              id="plus"
+              onclick="display('+')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="+/-" id="" onclick="" />
+          </td>
+          <td>
+            <input type="button" value="0" onclick="display(0)" />
+          </td>
+          <td>
+            <input type="button" value="." id="" onclick="display('.')" />
+          </td>
+          <td>
+            <input
+              class="arithmatic"
+              type="button"
+              value="="
+              id="equals"
+              onclick="compute()"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
